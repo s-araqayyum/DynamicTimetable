@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sara's Portfolio</title>
+</head>
+<body style="background-color: #C1EBF9">
+    <nav>
+        <ul>
+            <li><a href="index.html" id="selectedheading">My Portfolio</a></li>
+            <li><a href="mytimetable.html">My Timetable</a></li>
+        </ul>
+    </nav>
+    <img class="background-images" src="images/background.gif">
+    <img id="background-images" src="images/background.gif">
+
+
+    <div class="gridDisplayHeader">
+        <!-- A Header-element to contain a menu with links to relevant, a picture of the user and their name-->
+        <header>
+            <!-- Page mustshow navigation to othertwo pages mytimetable.html. -->
+            <img id="userImage" src="images/pictureofuser.png">
+            <br>
+            <h2 id="userName" >Sara Qayyum</h2>
+        </header>
+
+        <!-- Information about a user's academic pursuits, information about the college/university courses the user has have taken, and a link to college/university.  -->
+        <section id="courseDetails">
+            <!-- The courses must be grouped into "MajorCourses" and "Other Courses". -->
+            <h3>My Academic Background</h3>
+            <ol>
+                <li><a href="http://isb.nu.edu.pk/">Bachelor's degree from National University of Computers and Emerging Sciences</a></li>
+            </ol>
+            <table>
+                <tr>
+                    <th class="headings-color">Major Courses</th>
+                    <th class="headings-color">Other Courses</th>
+                </tr>
+                <tr>
+                    <td>Web Engineering</td>
+                    <td>Marketing Management</td>
+                </tr>
+                <tr>
+                    <td>Process Mining</td>
+                    <td>Psychology</td>
+                </tr>
+                <tr>
+                    <td>Artificial Intelligence</td>
+                    <td>Computer Networks</td>
+                </tr>
+                <tr>
+                    <td>Information Security</td>
+                    <td>Business Management</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <section class="projectsContainer" style="margin-top:70px ;">
+        <h3 id="projectHeading">Personal Projects: A look through my life</h3>
+        <div class="project">
+            <p>Pokemon Go Replica</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/arcade.gif">
+        </div>
+
+        <div class="project">
+            <p>Planting System</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/plant.gif">
+        </div>
+
+        <div class="project">
+            <p>Cafe System</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/cafe.gif">
+        </div>
+
+        <div class="project">
+            <p>Bank System</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/mgmtsystm.gif">
+        </div>
+    </section>
+
+    <section class="projectsContainer">
+        <h3 id="projectHeading">Academia Projects: A look through my schooling</h3>
+        <div class="project">
+            <p>Game Development</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/blender.jpg">
+        </div>
+
+        <div class="project">
+            <p>Meditation</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/fire.png">
+        </div>
+
+        <div class="project">
+            <p>Character Design</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/game.jpg">
+        </div>
+
+        <div class="project">
+            <p>Role Playing Game</p>
+            <img class="myProjectImg" height="60%" width="80%" src="images/rpg.jpg">
+        </div>
+    </section>
+    <!-- A footer section to incorporate details like copyright -->
+    <footer>
+        <p>Designed by Sara Qayyum | 20I-0556 | BSSE - 6R | &copy;</p>
+    </footer>
+</body>
+</html>

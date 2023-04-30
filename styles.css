@@ -1,0 +1,268 @@
+:root {
+    --background: #C1EBF9;
+    --overlays: #9DC9E3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#selectedheading{
+    color: rgb(233, 237, 249);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    background-color: var(--overlays);
+}
+
+li, a{
+    text-decoration: none; /*Remove the anchor tag decorations*/
+    color: var(--background); /*Soft color for anchor tags*/
+    background-color: var(--overlays); 
+    text-align: center;
+
+    padding-left: 10px; 
+    margin: 5px 10px 0 0;
+
+    display: block;
+    float: right;
+}
+
+li a:hover {
+    color: white; /*Turn navigation links to white*/
+    text-decoration: underline;
+    font-weight: bold;
+    /* color: #42b4d6; */
+}
+
+.gridDisplayHeader{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#userName{
+    width: 200px;
+    margin: 15px 20px 5px 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    color: rgb(233, 237, 249);
+    background-color: var(--overlays);
+}
+
+#userImage{
+    background-color: var(--overlays);
+    height: 100px;
+    width: 100px;
+    margin-top: 40px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+footer{
+    background-color: var(--overlays);
+    padding-left: 20px;
+}
+
+#courseDetails{
+    width: 400px;
+    height: 245px;
+    background-color: var(--overlays);
+    
+}
+
+.background-images{
+    margin-top: 80px;
+    position: absolute;
+    z-index: -1;
+}
+
+#background-images{
+    right: 0;
+    position: absolute;
+    margin-top: 380px;
+    z-index: -3;
+}
+
+h3{
+    background-color: var(--overlays);
+    color: rgb(233, 237, 249);
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+table, tr, th, td{ /*Changing the background color*/
+    background-color: var(--overlays)
+}
+
+table{
+    width: 100%;
+    margin-top: 15%;
+    align-items: center;
+}
+
+.headings-color{
+    color: rgb(233, 237, 249);
+    margin-bottom: 5px;
+}
+
+th{
+    padding: 1px;
+    text-align: center;
+    color: var(--background);
+}
+
+td{
+    padding: 1px;
+    text-align: center; 
+    color: var(--background);
+}
+
+
+/*Project Section*/
+
+.projectsContainer{
+    background-color: var(--overlays);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin: 30px auto;
+    width: 60%;
+    padding-bottom: 30px;
+
+    max-width: 60%;
+}
+
+#projectHeading{
+    display: block;
+    width: 100%;
+}
+
+.project{
+    margin-top: 15px;
+    width: 150px;
+    height: 130px;
+    flex-basis: calc(100% / 5 - 10px);
+
+    padding: 7px;
+    text-align: center;
+
+    background-color:#79a4bd;
+    border: 1px dotted var(--background);
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(233, 237, 249);
+}
+
+/*Timetable*/
+
+.timetable{
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    margin: 15px auto;
+}
+
+tr, th, td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+td{
+    padding: 1px;
+    text-align: center; 
+    color: var(--background);
+}
+
+.mybuttons{
+    text-align: center;
+}
+
+#addColumn, #addRow, #addAgenda, .addTime{
+    background-color: var(--overlays);
+    color: rgb(233, 237, 249);
+    font-size: 16px;
+
+    border: none;
+    margin: 10px 10px;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*Delete Icon*/
+.delete {
+    display: none;
+    float: right;
+    background-color: white;
+    border: none;
+    color: var(--overlays);
+}
+
+td:hover .delete {
+    display: inline-block;
+}
+
+.delete:hover{
+    color:#375d72;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 767px){
+    .project{
+        flex-basis: calc(100% / 1 - 10px);
+    }
+
+    p{
+        display: block; /* show the project name on tablet devices and up */
+        margin-bottom: 10px; 
+    }
+}
+
+body{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .project{
+        flex-basis: calc(100% / 3 - 10px);
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .project{
+        flex-basis: calc(100% / 5 - 10px);
+    }
+
+    p{
+        display: block; /* show the project name on tablet devices and up */
+        margin-bottom: 10px; 
+    }
+}
